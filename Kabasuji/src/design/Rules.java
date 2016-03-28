@@ -11,6 +11,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.JTextPane;
+import javax.swing.JTabbedPane;
 
 public class Rules extends JApplet {
 
@@ -34,14 +35,13 @@ public class Rules extends JApplet {
 		btnBack.setBounds(12, 264, 57, 23);
 		getContentPane().add(btnBack);
 		
-		JButton btnNext = new JButton("Next");
-		btnNext.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-		btnNext.setBounds(381, 264, 57, 23);
-		getContentPane().add(btnNext);
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setBounds(12, 50, 426, 189);
+		getContentPane().add(tabbedPane);
 		
-		JTextPane txtpnPuzzle = new JTextPane();
-		txtpnPuzzle.setText("Puzzle: \r\n\r\nIn this mode, the objective is to form the board shape using the pieces given in the bullpen. Pieces may be rotated or flipped before placement. Pieces once placed can be relocated. \r\n\r\nThe player is limited to the given number of moves. Moves must be valid; pieces must be placed within the boundaries of the board. ");
-		txtpnPuzzle.setBounds(12, 53, 426, 198);
-		getContentPane().add(txtpnPuzzle);
+		JTextPane txtpnPuzzleInThis = new JTextPane();
+		txtpnPuzzleInThis.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		txtpnPuzzleInThis.setText("In this mode, the objective is to form the board shape using the pieces given in the bullpen. Pieces may be rotated or flipped before placement. Pieces once placed can be relocated. \r\n\r\nThe player is limited to the given number of moves. Moves must be valid; pieces must be placed within the boundaries of the board. ");
+		tabbedPane.addTab("Puzzle", null, txtpnPuzzleInThis, null);
 	}
 }

@@ -11,6 +11,7 @@ import javax.swing.SwingConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import javax.swing.JPanel;
 
 public class Title extends JApplet {
 
