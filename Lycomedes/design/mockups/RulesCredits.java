@@ -41,14 +41,14 @@ public class RulesCredits extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 950, 800);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.BLACK);
+		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblKabasuji = new JLabel("KABASUJI");
 		lblKabasuji.setBounds(283, 0, 363, 121);
-		lblKabasuji.setForeground(Color.WHITE);
+		lblKabasuji.setForeground(Color.BLACK);
 		lblKabasuji.setFont(new Font("Times New Roman", Font.BOLD, 72));
 		contentPane.add(lblKabasuji);
 		
